@@ -9,17 +9,8 @@ This plugin add the CSS class to BODY tag. It is using the Mobile_Detect library
 
 == Description ==
 
-The library is from http://mobiledetect.net/<br/>
-The BODY tag needs to use the body_class() function.<br/>
-The values:<br/>
-- mobile<br/>
-- tablet<br/>
+The library is from http://mobiledetect.net/. The BODY tag needs to use the body_class() function. The values: mobile OR tablet. See the screen shots for more.
 
-Ex: &lt;body &lt;?php body_class(); ?&gt;&gt;
-Result:
-&lt;body class="home page page-id-420 page-template-default logged-in mobile"&gt;
-OR
-&lt;body class="home page page-id-420 page-template-default logged-in tablet"&gt;
 
 == Installation ==
 
