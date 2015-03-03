@@ -2,7 +2,7 @@
 /*
 Plugin Name: Mobile Detect For CSS
 Description: This plugin add the device css class to BODY tag
-Version: 1.0
+Version: 1.1
 Author: Phuc Pham
 License: GPL
 Copyright: Phuc Pham
@@ -29,6 +29,22 @@ class Mobile_Detect_For_Css{
 
         if($this->mobile_detect->isTablet()){
             $classes[] = 'tablet';
+        }
+
+        if( $this->mobile_detect->isiOS() ){
+            $classes[] = 'ios';
+        }
+
+        if( $this->mobile_detect->isAndroidOS() ){
+            $classes[] = 'android';
+        }
+
+        if( $this->mobile_detect->isMobile() && $this->mobile_detect->isTablet() ){
+            $classes[] = 'handheld';
+        }
+
+        if(!$this->mobile_detect->isMobile() && !$this->mobile_detect->isTablet()){
+            $classes[] = 'desktop';
         }
 
         return $classes;
