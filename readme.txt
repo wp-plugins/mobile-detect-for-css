@@ -2,7 +2,7 @@
 Contributors: svincoll4
 Tags: php, mobile, detect, ios, android, css
 Requires at least: 2.8
-Tested up to: 4.1.1
+Tested up to: 4.2.2
 
 This plugin add the CSS class to BODY tag. It is using the Mobile_Detect library from http://mobiledetect.net/
 
